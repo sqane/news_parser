@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Резульат</title>
+</head>
+<body>
+{% for each in news %}
+    <h2>{{ each.name }}</h2>
+    Дата добавления статьи: <h3>{{ each.date_added }}</h3>
+    <h3>{{ each.body }}</h3>
+    <br>
+{%  endfor %}
+</body>
+</html>
