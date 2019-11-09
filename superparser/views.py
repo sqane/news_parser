@@ -12,6 +12,7 @@ def index(request):
                   'index.html',
                   context)
 
+
 def parse_news(request):
     news = models.News.objects.all()
     for each in news:
